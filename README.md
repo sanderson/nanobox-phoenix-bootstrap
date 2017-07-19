@@ -29,7 +29,7 @@ To fire up the app's dev environment and drop into a console in the evnironment,
 nanobox run
 ```
 
-You local codebase is mounted into the dev container. Any changes to the app are reflected in your dev app. You can add and load dependencies or any other dev tasks. Or you can simply start Phoenix.
+Your local codebase is mounted into the dev container. Any changes to the code are reflected in your dev app. You can add and load dependencies or any other dev tasks. Or you can simply start Phoenix.
 
 ```bash
 mix phoenix.server
@@ -37,6 +37,12 @@ mix phoenix.server
 
 #### Add a DNS Alias
 Nanobox also lets you easily add a convenient way to access your Phoenix app from the browser. To add a DNS alias, run the following from the root of your project _(outside the Nanobox console)_.
+
+```bash
+nanobox dns add local phoenix.dev
+```
+
+After you `nanobox run mix phoenix.server`, you'd be able to access the running app at `http://phoenix.dev:4000`.
 
 ### Deployment
 1. [Create a new app in your Nanobox dashboard](https://docs.nanobox.io/workflow/launch-app/)
