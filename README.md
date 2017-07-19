@@ -14,6 +14,9 @@ mkdir phoenix-app && cd phoenix-app
 bash <(curl -sL https://git.io/vQhEX)
 ```
 
+## That's It!
+The bootstrap will provision a dev environment, install Phoenix, and start the Phoenix server. You'll find the IP and port where you can see the running up just before the Phoenix compilation output.
+
 ---
 
 ## Building Out the Project
