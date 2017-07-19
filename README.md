@@ -11,7 +11,7 @@ If you haven't already, [create a free Nanobox account](https://dashboard.nanobo
 mkdir phoenix-app && cd phoenix-app
 
 # run the bootstrap
-bash <(curl -sL https://raw.githubusercontent.com/sanderson/nanobox-phoenix-bootstrap/master/bin/bootstrap.sh)
+bash <(curl -sL https://git.io/vQhEX)
 ```
 
 ---
