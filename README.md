@@ -23,7 +23,7 @@ The bootstrap will provision a dev environment, install Phoenix, and start the P
 Once the project is bootstrapped, building it out is really simple.
 
 ### Development
-To fire up the app's dev environment and drop into a console in the evnironment, just run:
+To fire up the app's dev environment and drop into a console in the environment, just run:
 
 ```bash
 nanobox run
