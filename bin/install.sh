@@ -22,9 +22,10 @@ curl -sL https://raw.githubusercontent.com/sanderson/nanobox-phoenix-bootstrap/m
 
 # running app info
 text="
----------------------------------------------------------------------- \n\n
-   After your app compiles and starts, view it at $APP_IP:4000 \n\n
----------------------------------------------------------------------- \n
+--------------------------------------------------------------------\n
++ IMPORTANT:
++ After your app compiles and starts, view it at $APP_IP:4000 \n
+--------------------------------------------------------------------\n
 "
 printf "$text"
 
