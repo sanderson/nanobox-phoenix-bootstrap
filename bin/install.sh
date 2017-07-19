@@ -1,7 +1,12 @@
 #!/bin/sh
 set -e
 
+# formatting colors
+grn="\x1b[32m"
+end="\x1b[0m"
+
 # install Phoenix
+printf "\n${grn}+ Installing Phoenix...${end}\n"
 echo Y | mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez
 
 # generate a new phoenix app in the /tmp directory
@@ -13,6 +18,7 @@ cp -a /tmp/app/* /app
 cd -
 
 # load dependencies
+printf "\n${grn}+ Loading dependencies...${end}\n"
 mix deps.get
 yarn install
 
@@ -23,8 +29,8 @@ curl -sL https://raw.githubusercontent.com/sanderson/nanobox-phoenix-bootstrap/m
 # running app info
 text="
 --------------------------------------------------------------------\n
-+ IMPORTANT:
-+ After your app compiles and starts, view it at $APP_IP:4000 \n
+${grn}+ IMPORTANT:
++ After Phoenix compiles and starts, view it at $APP_IP:4000${end}\n
 --------------------------------------------------------------------\n
 "
 printf "$text"
